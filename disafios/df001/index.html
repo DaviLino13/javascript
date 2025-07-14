@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body {
+            font: 500 10pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #text {
+            
+            margin-bottom: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #button {
+            margin-left: 1.1rem;
+            padding: 6px;
+            border-radius:8px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>De qual país você veio</h1>
+    <input type="text" id="text" name="text">
+    <input type="button" id="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+        function verificar() {
+            var br = document.getElementById('text')
+            var res = document.getElementById('res')
+            if (br.value == 'Brasil') {
+                res.innerHTML = ('Bem Vindo de volta para o Brasil!')
+            } else {
+                res.innerHTML = ('Boas vindas  Brasil!')
+            }
+        }
+    </script>
+</body>
+</html>
